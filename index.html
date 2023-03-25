@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+    <title>Library</title>
+</head>
+<body>
+    <nav id="top-content">
+        <header id="main-page-header">My book library.</header>
+        <section id="nav-bottom-text">This is a project for The Odin Project which I have to make a library.</section>
+       
+        <section id="inputs-container">
+            <article id="inline-inputs">
+                <input type="text" id="title" name="" class="inputs" placeholder="Title">
+                <input type="text" id="author" name="" class="inputs" placeholder="Author">
+            </article>
+
+            <article >
+             <div id="select-box">
+                <p id="choosen"> Status </p>
+                <svg id="dropdown-arrow" width="1rem" height="0.9rem" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_43_4)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.792047 0.310956C0.400047 0.711864 0.400047 1.35823 0.792047 1.75914L7.44005 8.55823C7.75205 8.87732 8.25605 8.87732 8.56805 8.55823L15.216 1.75914C15.608 1.35823 15.608 0.711864 15.216 0.310955C14.824 -0.089954 14.192 -0.089954 13.8 0.310955L8.00005 6.23459L2.20005 0.302775C1.81605 -0.0899516 1.17605 -0.0899535 0.792047 0.310956Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_43_4">
+                    <rect width="9" height="16" fill="white" transform="translate(0 9) rotate(-90)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+             </div>
+              <ul id="dropdown-list">
+                    <li id="Read">Read</li>
+                    <li id="Notread">Not read</li>
+                </ul>
+            </article>
+                
+            <article id="button-container">
+                <button id="add-book-button">+ Add book</button>
+            </article>
+           
+        </section>
+    </nav>
+    <main id="books-container">
+        <nav id="books-container-nav">
+            <p>Name</p>
+            <p>Author</p>
+            <p>Status</p>
+        </nav>
+        <section id="books-container-main-content">
+        </section>
+    </main>
+
+    <script src="dropdownlist.js"></script>
+    <script src="bookContainer.js"></script>
+</body>
+</html>

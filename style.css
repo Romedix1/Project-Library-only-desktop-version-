@@ -1,0 +1,261 @@
+*
+{
+    font-size: 1vw;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+body
+{
+    background: linear-gradient(to right,#FC5C7D,#6A82FB);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#top-content
+{
+    margin-top: 4rem;
+    margin-left: 7rem;
+}
+
+#main-page-header
+{
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+}
+
+#nav-bottom-text
+{
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;   
+    color: #FFFFFF;
+}
+
+#inline-inputs
+{
+    display: flex;
+}
+
+.inputs
+{
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    border-bottom: 0.2rem solid #FFFFFF;
+    background-color: transparent;
+}
+
+input[type="text"]
+{
+    color: #FFFFFF;
+}
+
+.inputs::placeholder
+{
+    color: #FFFFFF;
+}
+
+.inputs:nth-child(2)
+{
+    margin-left: 2rem;
+}
+
+#select-box
+{
+    margin-top: 2rem;
+    color: #FFFFFF;
+    display: flex;
+    cursor: pointer;
+    width: 8rem;
+    border-bottom: 0.2rem solid #FFFFFF;
+
+}
+
+#dropdown-arrow
+{
+    margin-top: 0.2rem;
+    margin-left: 1.6rem;
+    transition: 0.5s;
+    background: transparent;
+}
+
+#choosen
+{
+    width: 80%;
+}
+
+#dropdown-list
+{
+    
+    list-style-type: none;
+    color: #FFFFFF;
+    width: 8rem;
+    transition: all .5s ease;
+}
+
+#dropdown-list li
+{
+    height: 0rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#dropdown-list li:hover
+{
+    cursor: pointer;
+    background-color: rgb(187, 61, 170);
+    border: 0.1rem solid blue !important ;
+}
+
+#button-container
+{
+    background-color: transparent;
+    position: absolute;
+    top: 20rem; 
+}
+
+#add-book-button
+{
+    border-radius: 13px;
+    border: 0.2rem solid #FFFFFF;
+    padding: 0.4rem 2.3rem;
+    color: #FFFFFF;
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#add-book-button:hover
+{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+#add-book-button:active
+{
+    background-color: #D1D1D1;
+    border: 0.2rem solid #D1D1D1;
+}
+
+#books-container
+{
+    margin-left: 7rem;
+    position: absolute;
+    top: 25rem;
+    width: 87rem;
+    min-height: 30rem;
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+
+}
+
+#books-container-nav
+{
+    background-color: #3E2C32;
+    width: 87rem;
+    display: flex;
+    border-radius: 30px 30px 0px 0px;
+    padding: 1rem;
+    color: #FFFFFF;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#books-container-nav p
+{
+    margin-left: 2rem;
+}
+
+#books-container-nav p:nth-child(2),
+#books-container-nav p:nth-child(3)
+{
+    margin-left: 20rem;
+}
+
+#books-container-main-content
+{
+    display: grid;
+
+}
+
+.single-book
+{
+    width: 87rem;
+    height: 4rem;
+    background-color: #EBEBEB;
+    display: flex;
+}
+
+.single-book:nth-child(2n+1)
+{
+   background-color: #FFFFFF;
+}
+
+.title
+{
+    width: 26%;
+    margin-top: 0.7rem;
+    padding-left: 3rem;
+}
+
+.author
+{
+    margin-top: 0.7rem;
+    width: 26.9%;
+
+}
+
+.status
+{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    padding: 1vw 2.6vw 1vw 2.6vw;
+    height: 2vw;
+    border: 0.1vw solid #3E2C32;;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.status:hover
+{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.status:active
+{
+    background-color: #D1D1D1;
+    border: 0.1rem solid #D1D1D1;
+}
+
+.delete
+{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    margin-left: 9vw;
+    padding: 1vw 2.6vw 1vw 2.6vw;
+    height: 2vw;
+    border: 0.1vw solid #3E2C32;;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    background-color: #E24A4A;
+    border: 0.1vw solid #E24A4A;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.statusContainer
+{
+    width: 20%;
+}
